@@ -273,8 +273,26 @@ ul,li,ol,h1,dl,dd{
 .news span {
     float: right;
 }
-.news span em, .news span a {
-    background: rgba(0, 0, 0, 0) url("../../images/comm_v2/newsIcon.png") no-repeat scroll 0 0;
+.news span em.views{
+    background: rgba(0, 0, 0, 0) url("../images/view.png") no-repeat scroll 0 0;
+    color: #aab2bd;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 5px;
+    padding-left: 22px;
+}
+ .news span a.replies {
+    background: rgba(0, 0, 0, 0) url("../images/replies.png") no-repeat scroll 0 0;
+    color: #aab2bd;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 5px;
+    padding-left: 22px;
+}
+ .news span a.share {
+    background: rgba(0, 0, 0, 0) url("../images/share.png") no-repeat scroll 0 0;
     color: #aab2bd;
     display: inline-block;
     height: 18px;

@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>去结算</title>
+		<link rel="shortcut icon" href="images/gocount.png"/>
+		<link href="css/gocount.css" type="text/css" rel="stylesheet"/>
+		<link href="css/footer.css" type="text/css" rel="stylesheet"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.cityselect.js"></script>
+		<script src="js/gocount.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+		<div class="addr_box"></div>
+		<div id="total">
+			<div class="header">
+		    	<div class="container">
+		            <div class="header-logo">
+		            	<a><img src="images/logo.png"/></a>
+		            </div>
+		            
+		            <div class="header-title">
+		            	<p class="header-p1">确认订单</p>
+		            </div>
+		            
+		            <div class="topbar-info">
+		            	<span class="user">
+		                	<a class="user-name">
+		                    	<span class="name">用户名</span>
+		                        <span class="iconfont">&or;</span>
+		                    </a>
+		                </span>
+		                <span>|</span>
+		                <a class="myorder" href="myOrder.html">我的订单</a>
+		            </div>
+		         </div> 
+			</div>
+			
+			
+			
+			
+			<div id="body">
+				<div id="main">
+					<div id="address">
+						<p class="addr_title">收货地址</p>
+						<div class="addr_detail have">
+							<p><span class="username">收货人姓名</span><span class="addr small">湖南工学院</span></p>
+							<p class="tel">18976651252</p>
+							<p class="addr big">湖南省 衡阳市 珠晖区</p>
+							<p class="addr middle">珠晖区 衡花路18号</p>
+							<p><a class="change">修改</a></p>
+						</div>
+						<div class="addr_detail no">
+							<div id="add">
+								<a class="add_newaddr">+</a>
+								<p class="add_p">添加新地址</p>
+							</div>
+						</div>	
+					</div>
+					
+					<div class="section section-goods">
+						<div class="section-header">
+							<h3 style="width: 120px; float: left;">商品订单详细</h3>
+							<div class="more" style="float: right; text-decoration: none; margin-right: 30px;">
+								<p><a href="shopcar.html" class="return_car">返回购物车<span class="iconfont"><</span></a></p>
+							</div>
+						</div>
+						<div class="section-body">
+                    		<ul class="goods-list" id="">
+                                <li class="clearfix">
+                                	<div class="col col-img">
+                                		<img src="images/mitu.jpg" width="30" height="30">
+                            		</div>
+                            		<div class="col col-name">
+										<a href="" target="_blank">小米鼠标垫 飞翔米兔</a>
+                                    </div>
+                            		<div class="col col-price">9.9元 x 1</div>
+                            		<div class="col col-status"> 有货</div>
+                            		<div class="col col-total">9.9元</div>
+                        		</li>
+                            </ul>
+                		</div>
+                		<!--
+                        	作者：刘娟
+                        	时间：2016-01-08
+                        	描述：结算详情
+                        -->
+                		<div class="money-box" id="">
+		                    <ul>
+		                        <li class="clearfix">
+		                            <label>商品件数：</label>
+		                            <span class="val">1件</span>
+		                        </li>
+		                        <li class="clearfix">
+		                            <label>金额合计：</label>
+		                            <span class="val">9.9元</span>
+		                        </li>
+		                        
+		                        <li class="clearfix total-price">
+		                            <label>应付总额：</label>
+		                            <span class="val"><em id="J_totalPrice">9.9</em>元</span>
+		                        </li>
+		                    </ul>
+		                </div>
+		                
+		                <div id="addr_show">
+		                	<ul>
+		                		<li>某某</li>
+		                		<li>18546295454</li>
+		                		<li>湖南省 衡阳市 珠晖区 衡花路18号 湖南工学院</li>
+		                	</ul>
+		                	<a class="change">修改</a>
+		                </div>
+					</div>
+					
+					<div id="main_footer">
+						<div class="count">去结算</div>						
+					</div>
+				</div>
+			</div>
+			
+			<!--
+            	作者：offline
+            	时间：2016-01-09
+            	描述：订单界面 开始是隐藏的
+            -->
+			<div id="order_post">
+				<div class="order_post_content">
+					<div class="order_post_judge">
+						<img src="images/zhengque.png">
+					</div>
+					<div class="order_post_message">
+						<h2>订单提交成功 ！去付款咯~</h2>
+						<p>应付总额：<span class="pay_money">15.00元</span></p>
+					</div>
+					<a class="look_order" title="查看订单详情"><img src="images/look_order.jpg"></a>
+					<div class="order_post_detail">
+						<ul>
+							<li>订单编号：<span class="orderId">1002</span></li>
+							<li>收货信息：<span class="orderMessage">名字 手机号码 地址 </span></li>
+							<li>商品名称：<span class="orderProName">USB Type-C 转换头 黑色</span></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="pay">
+					<div id="choose_way"><p>选择付款方式</p></div>
+					<div id="pay_way">
+						<p class="payways">支付平台</p>
+						<a><img src="images/pay_way_zfb.png"></a>
+						<a><img src="images/pay_way_xmqb.png"></a>
+						<a><img src="images/pay_way_jsyh.png"></a>
+						<a><img src="images/pay_way_yzyh.png"></a>
+						<a><img src="images/pay_way_yl.png"></a>
+					</div>
+				</div>
+				
+			</div>
+			
+			    
+			<div class="footer">
+				<div class="footer_1">
+				    <ul>
+				    	<li><img src="images/repair.png">一小时快修服务</li>
+				        <li><img src="images/7days.png"><span>七天无理由退货</span></li>
+				        <li><img src="images/15days1.png"><span>15天免费换货</span></li>
+				        <li><img src="images/包邮.png"><span>满150元包邮</span></li>
+				        <li style="border:none;"><img src="images/售后.png"><span>520余家售后网点</span></li>
+				    </ul>
+			    </div>
+			    <div class="footer_2">
+			    	<div class="service_1">
+			        	<p class="service_title">帮助中心</p>
+			            <p><a>购物指南</a></p>
+			            <p><a>支付方式</a></p>
+			            <p><a>配送方式</a></p>
+			        </div>
+			    	<div class="service_2">
+			        	<p class="service_title">服务支持</p>
+			            <p><a>售后政策</a></p>
+			            <p><a>资助服务</a></p>
+			            <p><a>相关下载</a></p>
+			        </div>
+			    	<div class="service_3">
+			        	<p class="service_title">小米之家</p>
+			            <p><a>小米之家</a></p>
+			            <p><a>服务网点</a></p>
+			            <p><a>预约亲临到店服务</a></p>
+			        </div>
+			        <div class="service_4">
+			        	<p class="service_title">关于小米</p>
+			            <p><a>了解小米</a></p>
+			            <p><a>加入小米</a></p>
+			            <p><a>联系我们</a></p>
+			        </div>
+			        <div class="service_5">
+			        	<p class="service_title">关注我们</p>
+			            <p><a>新浪微博</a></p>
+			            <p><a>小米部落</a></p>
+			            <p><a>官方微信</a></p>
+			        </div>
+			        <div class="service_online">
+			        	<span>400-100-5678</span>
+			            <p>周一至周日 8:00-18:00</p>
+			            <p>(仅收市话费)</p>
+			            <p class="online"><a><img src="images/sever_out.png"/></a></p>
+			        </div>
+			    </div>
+			    
+			    <div class="footer_3">
+			    	<div class="footer_3_main">
+			        	<div class="footer_log"><img src="images/log1.png"/>
+			        	</div>
+			          <div class="footer_3_a">
+			            	<ul>
+			                	<li><a>小米网</a></li><li class="footer_line">|</li>
+			                    <li><a>MIUI</a></li><li class="footer_line">|</li>
+			                    <li><a>米聊</a></li><li class="footer_line">|</li>
+			                    <li><a>多看书城</a></li><li class="footer_line">|</li>
+			                    <li><a>小米路由器</a></li><li class="footer_line">|</li>
+			                    <li><a>小米后院</a></li><li class="footer_line">|</li>
+			                    <li><a>小米天猫店</a></li><li class="footer_line">|</li>
+			                    <li><a>小米淘宝直营店</a></li><li class="footer_line">|</li>
+			                  	<li><a>小米网盟</a></li><li class="footer_line">|</li>
+			                    <li><a>问题反馈</a></li>
+			                </ul>
+			                <div class="footer_b">
+			            		<p>&copy;mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号</p>
+			            	</div>
+			            </div>
+			            
+			            <div class="footer_c">
+			            	<div class="footer_cc">
+			            		<img src="images/foot1.png"/>诚信网页示范企业
+			                </div>
+			                <div class="footer_cc">
+			            		<img src="images/foot2.png"/> 可信网站信用评价
+			                </div>
+			                <div class="footer_cc">
+			            		<img src="images/foot3.png"/>网上交易保障中心
+			                </div>
+			            </div>	
+			        </div>
+			    </div>
+			</div>
+    	</div>
+		
+		
+		
+		<!--
+        	作者：offline
+        	时间：2016-01-09
+        	描述：点击修改显示修改框
+        -->
+			
+		<div class="addr_box_body" style="display:none ;">
+			<div class="form-section form-section-name">
+				<label class="box_name label">&nbsp;姓名</label>
+				<input type="text" placeholder="姓名"/>
+			</div>	
+			<div class="form-section form-section-tel">
+				<label class="box_tel label">&nbsp;手机号</label>
+				<input type="text" placeholder="手机号" />
+			</div>
+			
+			<div class="form-section form-section-province">
+				<div id="city_4">
+					<select class="prov form_province" id="select_province"></select> 
+					<select class="city form_city" disabled="disabled" id="citys"></select>
+					<select class="dist form_area form-section" disabled="disabled" id="area"></select>
+				</div>
+			</div>
+			
+			<div class="form-section detail_addr">
+				<label class="box_detailaddr label">&nbsp;详细地址</label>
+				<input type="text" placeholder="详细地址"/>
+			</div>
+			<div class="form-section post_code">
+				<label class="box_post label">&nbsp;邮政编码</label>
+				<input type="text" placeholder="邮政编码"/>
+			</div>
+			
+			<div class="addr_op">
+				<a class="addr_save">保存</a>
+				<a class="addr_cancel">取消</a>
+			</div>
+			
+			
+		</div>
+		
+	</body>
+</html>

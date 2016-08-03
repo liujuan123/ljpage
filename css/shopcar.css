@@ -394,10 +394,10 @@ body{
 	width:122px;
 	height:32px;
 	margin-top:10px;
-	background:url(images/sever_out.png) no-repeat;	
+	background:url(../images/sever_out.png) no-repeat;	
 }
 .service_online .online:hover{
-	background:url(images/sever_over.png) no-repeat;
+	background:url(../images/sever_over.png) no-repeat;
 }
 .service_title{
 	color:#666;
